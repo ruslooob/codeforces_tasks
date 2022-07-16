@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ruslooob.team.MainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-16T20:35:28" hostname="ruslan" time="0.021">
+  <properties/>
+  <testcase name="teamSolver()" classname="com.ruslooob.team.MainTest" time="0.021"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
