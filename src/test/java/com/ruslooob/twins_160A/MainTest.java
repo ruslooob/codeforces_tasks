@@ -17,7 +17,7 @@ class MainTest {
 
     @Test
     void twinsSolver2() {
-        List<Integer> coins = Arrays.asList(2,1 ,2);
+        List<Integer> coins = Arrays.asList(2, 1 ,2);
         assertEquals(2, Main.twinsSolver(coins));
     }
 
