@@ -2,7 +2,7 @@ package com.ruslooob._800.almost_lucky_number_110A;
 
 import java.util.Scanner;
 
-public class Main {
+public class Standard {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String n = scanner.next();
@@ -12,25 +12,20 @@ public class Main {
     public static String almostLuckyNumberSolver(String n) {
         int count = 0;
         for (int i = 0; i < n.length(); i++) {
-            char ch = n.charAt(i);
-            if (isLuckyChar(ch)) {
+            String ch = n.substring(i, i + 1);
+            if (isLuckyNumber(ch)) {
                 count++;
             }
         }
         return isLuckyNumber(Integer.toString(count)) ? "YES" : "NO";
     }
 
-    private static boolean isLuckyNumber(String n) {
-        for (int i = 0; i < n.length(); i++) {
-            char ch = n.charAt(i);
-            if (!isLuckyChar(ch)) {
+    private static boolean isLuckyNumber(String strNum) {
+        for (char ch : strNum.toCharArray()) {
+            if (ch != '4' && ch != '7') {
                 return false;
             }
         }
         return true;
-    }
-
-    private static boolean isLuckyChar(char ch) {
-        return ch == '4' || ch == '7';
     }
 }

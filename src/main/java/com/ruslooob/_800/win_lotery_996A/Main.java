@@ -1,5 +1,6 @@
 package com.ruslooob._800.win_lotery_996A;
 
+import java.util.Optional;
 import java.util.Scanner;
 
 public class Main {

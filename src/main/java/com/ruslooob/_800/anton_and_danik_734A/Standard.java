@@ -2,10 +2,10 @@ package com.ruslooob._800.anton_and_danik_734A;
 
 import java.util.Scanner;
 
-public class Main {
+public class Standard {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+        scanner.nextInt();
         String inputStr = scanner.next();
         System.out.println(antonAndDanikSolver(inputStr));
     }
